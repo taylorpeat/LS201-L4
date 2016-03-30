@@ -1,0 +1,48 @@
+body {
+  margin-left: 100px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  padding-bottom: 15px;
+  float: left;
+  clear: left;
+}
+
+button,
+input,
+select,
+textarea {
+  float: left;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  clear: left;
+  margin-top: 20px;
+}
+
+.toggle {
+  text-align: right;
+  padding-right: 10px;
+  width: 80px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  overflow: hidden;
+  clear: left;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 20px;
+}

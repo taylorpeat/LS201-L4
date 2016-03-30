@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="contact_style.css">
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <form action="" method="post">
+      <label for="first_name">First Name:</label>
+      <input type="text" name="first_name" id="first_name">
+      <label for="last_name">Last Name:</label>
+      <input type="text" name="last_name" id="last_name">
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email">
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city">
+      <label for="state">State:</label>
+      <select name="state" id="state">
+        <option>AK</option>
+        <option>AL</option>
+        <option>AR</option>
+        <option>AZ</option>
+        <option>CA</option>
+        <option>CO</option>
+        <option>CT</option>
+        <option>DC</option>
+        <option>DE</option>
+        <option>FL</option>
+        <option>GA</option>
+        <option>HI</option>
+        <option>IA</option>
+        <option>ID</option>
+        <option>IL</option>
+        <option>IN</option>
+        <option>KS</option>
+        <option>KY</option>
+        <option>LA</option>
+        <option>MA</option>
+        <option>MD</option>
+        <option>ME</option>
+        <option>MI</option>
+        <option>MN</option>
+        <option>MO</option>
+        <option>MS</option>
+        <option>MT</option>
+        <option>NC</option>
+        <option>ND</option>
+        <option>NE</option>
+        <option>NH</option>
+        <option>NJ</option>
+        <option>NM</option>
+        <option>NV</option>
+        <option>NY</option>
+        <option>OH</option>
+        <option>OK</option>
+        <option>OR</option>
+        <option>PA</option>
+        <option>RI</option>
+        <option>SC</option>
+        <option>SD</option>
+        <option>TN</option>
+        <option>TX</option>
+        <option>UT</option>
+        <option>VA</option>
+        <option>VT</option>
+        <option>WA</option>
+        <option>WI</option>
+        <option>WV</option>
+        <option>WY</option>
+      </select>
+      <label for="zipcode">Zipcode:</label>
+      <input type="number" name="zipcode" id="zipcode" inputmode="numeric" max="99999">
+      <div class="form-group">
+        <h4>Choose your favorite color:</h4>
+        <label for="red" class="toggle">Red</label>
+        <input type="radio" name="colors" id= "red" selected>
+        <label for="orange" class="toggle">Orange</label>
+        <input type="radio" name="colors" id= "orange">
+        <label for="yellow" class="toggle">Yellow</label>
+        <input type="radio" name="colors" id= "yellow">
+        <label for="green" class="toggle">Green</label>
+        <input type="radio" name="colors" id= "green">
+        <label for="blue" class="toggle">Blue</label>
+        <input type="radio" name="colors" id= "blue">
+        <label for="indigo" class="toggle">Indigo</label>
+        <input type="radio" name="colors" id= "indigo">
+        <label for="violet" class="toggle">Violet</label>
+        <input type="radio" name="colors" id= "violet">
+      </div>
+      <div class="form-group">
+        <h4>What technologies are you interested in?</h4>
+        <label class="toggle" for="html">HTML</label>
+        <input type="checkbox" name="html" id="html">
+        <label class="toggle" for="css">CSS</label>
+        <input type="checkbox" name="css" id="css">
+        <label class="toggle" for="javascript">Javascript</label>
+        <input type="checkbox" name="javascript" id="javascript">
+        <label class="toggle" for="ruby">Ruby</label>
+        <input type="checkbox" name="ruby" id="ruby">
+        <label class="toggle" for="rails">Rails</label>
+        <input type="checkbox" name="rails" id="rails">
+        <label class="toggle" for="python">Python</label>
+        <input type="checkbox" name="python" id="python">
+        <label class="toggle" for="django">Django</label>
+        <input type="checkbox" name="django" id="django">
+      </div>
+      <div class="form-group">
+        <h4>Please leave a comment.</h4>
+        <textarea name="comment" id="comment" rows="8" cols="60" placeholder="Enter comment here"></textarea>
+      </div>
+      <input type="submit">
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html> 
