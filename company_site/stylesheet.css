@@ -9,17 +9,28 @@ body {
   font-size: 20px;
 }
 
-h1 img {
-  padding-bottom: 127px;
+header nav {
+  vertical-align: bottom;
 }
 
 header a {
-  color: #cacaca
+  color: #cacaca;
+  font-size: 26px;
 }
 
-header nav li {
+header h1 {
+  height: 244px;
+  margin-bottom: 116px;
+  background: url("images/logo.png") 0 0 no-repeat;
+  background-position: center;
+}
+
+header h1 a {
+  visibility: hidden;
+}
+
+header li {
   display: inline-block;
-  font-size: 26px;
   padding: 0 44px;
 }
 
@@ -30,13 +41,11 @@ nav a.active {
 
 header {
   margin-bottom: 35px;
-  min-width: 600px;
 }
 
 main {
   background-color: #fff;
   padding-top: 135px;
-  min-width: 600px;
 }
 
 h2:before,
@@ -81,10 +90,9 @@ footer {
   background-color: #e7e7e7;
   padding-top: 90px;
   color: #b2b2b2;
-  min-width: 600px;
 }
 
-footer nav li {
+footer li {
   display: inline-block;
   margin: 30px 60px;
   height: 46px;
@@ -116,7 +124,7 @@ section img {
   padding-bottom: 40px;
 }
 
-section p {
+main section p {
   display: inline-block;
   width: 60%;
 }
@@ -136,5 +144,107 @@ main li {
 
 main nav {
   padding-bottom: 200px;
-  min-width: 100%
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 70px;
+  }
+  header h1 {
+    height: 184px;
+    background-size: auto 184px;
+    margin-bottom: 30px;
+  }
+  main {
+    padding-top: 30px;
+  }
+  article {
+    padding: 40px 40px 70px 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  footer section {
+    padding-bottom: 55px;
+  }
+  footer {
+    height: 255px;
+    padding-top: 50px;
+  }
+  footer li {
+    margin: 0 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-top: 22px;
+    font-size: 16px;
+  }
+
+  header {
+    margin-bottom: 0;
+  }
+
+  header nav {
+    text-align: right;
+  }
+
+  header li {
+    float: right;
+    clear: right;
+    padding-right: 20px;
+    margin-bottom: 12px;
+  }
+
+  header nav a {
+    font-size: 16px;
+  }
+
+  header h1 a {
+    visibility: visible;
+    padding-left: 72px;
+    display: block;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  header h1 {
+    height: 46px;
+    background-size: auto 72px;
+    background-position: 0 0;
+    float: left;
+    margin-top: 12px;
+  }
+
+  header:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h2:before,
+  h2:after {
+    display: inline-block;
+    padding: 0 12px;
+    font-size: 30px;
+    content: "\2022";
+  }
+
+  footer {
+    padding-top: 38px;
+    height: auto;
+    padding-bottom: 25px;
+  } 
+  footer li {
+    margin: 0 21px;
+  }
+
 }
